@@ -1,6 +1,7 @@
 <html>
 
-  <head><title>Note Keeper</title></head>
+  <head><title>Note Keeper</title>
+
 
 
   <body>
@@ -8,7 +9,7 @@
         Note Keeper
     @show
 
-    <div class="container">
+    <div class="container" style="padding:20px">
        @yield('content')
     </div>
   </body>

@@ -1,3 +1,4 @@
+
 @extends('main')
 
 
@@ -10,12 +11,13 @@
 
 @section('content')
 
+
 <form action="{{ route('notes.store') }}" method="POST">
   @csrf
-  title
-  <input type="text" name="title"><br>
-  content
-  <textarea  name="content"></textarea>
+  title :
+  <input type="text" name="title" style="margin-left:20px; margin-bottom:20px;" ><br>
+  content :
+  <textarea  name="content"></textarea><br><br><br>
   <input name="AddNote" value="Add Note" type="submit">
 </form>
 
