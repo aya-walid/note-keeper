@@ -15,16 +15,7 @@
   <th>Content</th>
 </tr>
 
-    <!-- @foreach ($notes as $note)
 
-
-    <tr>
-    <td>{{ $note->title }}</td>
-    <td>{{ $note->content }}</td>
-    </tr>
-
-
-@endforeach -->
 
 @forelse ($notes as $note)
   <tr>

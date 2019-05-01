@@ -14,7 +14,8 @@ class NoteController extends Controller
      */
     public function index()
     {
-        $notes = Note::all();
+        $notes = Note::all()->sortByDesc('created_at');
+
         return view('showNotes' , ['notes'=>$notes]);
     }
 
